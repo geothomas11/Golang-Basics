@@ -23,24 +23,24 @@ package main
 // 	//Wait for the goroutine to finish before main goroutine ends
 // 	time.Sleep(time.Second)
 // 	fmt.Println("Main finished")
+// }
+
+// import "fmt"
+
+// func main() {
+// 	var c chan int
+// 	if c == nil {
+// 		fmt.Println("C is nil")
+// 		fmt.Printf("type of c is %T\n", c)
+// 		d := make(chan string)
+// 		fmt.Printf("type of c is %T\n", d)
+// 	}
+
+// }
+
+// func sendValues(myIntChannel chan int) {
+// 	for i := 0; i < 5; i++ {
+// 		myIntChannel <- i
+// 	}
+
 //}
-
-import "fmt"
-
-func main() {
-	var c chan int
-	if c == nil {
-		fmt.Println("C is nil")
-		fmt.Printf("type of c is %T\n", c)
-		d := make(chan string)
-		fmt.Printf("type of c is %T\n", d)
-	}
-
-}
-
-func sendValues(myIntChannel chan int) {
-	for i := 0; i < 5; i++ {
-		myIntChannel <- i
-	}
-
-}
